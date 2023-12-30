@@ -1,0 +1,163 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chaitanya Dua</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/chaitanya_dua.JPG' %}" >
+					<hr>
+					<h4>Hi I'm Chaitanya!</h4>
+					<p>I love coding, doing research and collaborating</p>
+				</div>
+			</div>
+
+			<div class="col-md-9">
+				<div class="card card-body h-100  border-info">
+					<h4>Introduction</h4>
+					<hr>
+					<p>I am a software engineer interested in developing web and mobile applications using
+                        various technologies and frameworks. I enjoy working in agile teams and creating high
+                        quality products using my problem- solving skills. I am always eager to learn new skills and
+                        tools to improve my performance, hence seeking a fulfilling position in the industry to
+                        utilize my skills and expand my knowledge base.</p>
+                    
+                    <p>
+                        Contat details:- 
+                        <br><b>E-Mail</b>: chaitanyadua2014@gmail.com
+                        <br><b>Phone</b>: +91 8126962776</p>
+                        <p>To connect with me on Whatsapp, scan my code:
+                            <img class="scan" src="{% static 'images/wa.jpeg' %}">
+
+                    </p>
+
+					<ul class="social-links">
+                        <p>do check out my profiles!..</p>
+						<li><a href="https://www.facebook.com/chaitanya.dua.1/"><img class="social" src="{% static 'images/facebook.png' %}"></a></li>
+						<li><a href="https://www.linkedin.com/in/chaitanya-dua-990919230/"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Education 🏫</h5>
+					<hr>
+                    {% for n in resumedataed %}
+                    <p>
+                        <b>{{n.school_name}}</b>
+                        {% comment %} <br>Bachelor of Technology in Computer Science {% endcomment %}
+                        <br>{{n.school_duration}}
+                        <br>{{n.school_score}}
+                    </p>
+                    {% endfor %}
+                    {% comment %} <p><b>{{n.school_name}}</b>
+                        <br>Higher Secondary Education 
+                        <br>{{n.school_duration}}
+                        <br>{{n.school_score}}</p> {% endcomment %}
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>What I Know</h5>
+					<hr>
+					<p>
+                        <b>Languages</b>: Python, C/C++, SQL , JavaScript, HTML/CSS
+                        <br>
+                        <b> Frameworks</b>: Django
+                        <br>
+                        <b> Developer Tools</b>: Git, Jupyter Notebook, VS Code, Visual Studio, PyCharm
+                        <br>
+                        <b> Libraries</b>: NumPy
+                    </p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+                    <h5>My Latest Projects 💻</h5>
+					<hr>
+					<p> <b> Cloud Kitchen Website </b> | Python, Django, Html, Css, Js 
+                        <br>July 2020 – Present </p>
+                    <p>
+                    • Developed a full-stack web application using django web framework
+                    <br>
+                    • Implented the frontend part using html, css and javascript
+                    <br>
+                    • Working towards making it interactive and usable for both, end-user and owner</p>
+                    <br>
+                    <p>
+                    <b> Music Cryptography </b> | Django, Python 
+                    <br>July 2023 - Present</p>
+                    <p>
+                    • Developing a way to hide textual data in musical notes such that melody of the music is maintained
+                    <br>
+                    • Using python libraries like mido for the same
+                    <br>
+                    • Using musical extensions like midi that is software readable
+                    </p>
+                    <br>
+                    <p> <b> Secure E-Voting Using Visual Cryptography </b> | Html, Css, Php 
+                        <br>Feb 2023 – May 2023</p>
+                    <p>
+                    • Developed a secure e-voting portel using basic web developing concepts
+                    <br>
+                    • Secured it using various encryption ways, like OTP, Captcha, and visual cryptography
+                    <br>
+                    • Useable for both voter and candidate
+                    </p>
+
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>My Certificates and Training 🏆</h5>
+				<hr>
+                <p> <b>Django</b>
+                <br>July 2023
+                <br>• Certified By Cetpa Infotech Pvt Ltd
+                <br>• Learnt and implemented Django web framework
+                </p>
+                <p> <b>Python</b>
+                <br>December 2021
+                <br>• Certified By Cetpa Infotech Pvt Ltd
+                <br>• Learnt Python language from basic to advance
+                <br>• Also practiced NumPy library.
+                </p>
+                <p> <b>Python Projects</b> 
+                <br>May 2023
+                <br>• Certified By LinkedIn Learning
+                <br>• Learnt how to plan for a project
+                <br>• Helped built strategic thinking
+                </p>
+                <p> <b>Cyber Security Fundamentals </b>
+                <br>April 2023
+                <br>• Certified By Infosys Springboard
+                <br>• Learnt basic information security techniques
+                </p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
+</body>
+</html>
