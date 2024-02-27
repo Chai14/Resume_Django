@@ -9,31 +9,58 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 </head>
-<body style="background-image: url('/static/images/bg2.png'); background-repeat: no-repeat; background-position: center; background-size: cover">
+<body style="background-image: url('/static/images/new4.jpg'); background-position: center">
 	<br>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+          <div class="container-fluid">
+            <a class="navbar-brand nav-link" href="">
+              <strong>Visit My Profiles ==>></strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/chaitanya-dua-990919230/" style="font-size: 20px; color: rgb(51,51,255)"><b>LinkedIn  &nbsp; &nbsp;</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/Chai14"  style="font-size: 20px; color: rgb(51,51,255)"><b>Github   &nbsp; &nbsp;</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://dakaar-lo.onrender.com/" style="font-size: 20px; color: rgb(51,51,255)"><b>Live Project   &nbsp; &nbsp;</b></a>
+                  </li>
+              </ul>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <br>
+      <br>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
-				<div class="card card-body h-100  border-info" id="profile-wrapper">
+				<div class="card card-body h-100  border-info" id="profile-wrapper" style="background-color: transparent; background-color: rgba(0,0,0,0.2)">
 					<img id="profile-pic" src="{% static 'images/chaitanya_dua.JPG' %}" >
 					<hr>
-					<h4>Hi I'm Chaitanya!</h4>
-					<p>I love coding, doing research and collaborating</p>
+					<h4 style="font-family: sans serif"><b><b>Hi I'm Chaitanya!</b></b></h4>
+					<p style="font-family: monospace"><b>I love coding, doing research and collaborating</b></p>
 				</div>
 			</div>
 
 			<div class="col-md-9">
-				<div class="card card-body h-100  border-info">
-					<h4>Introduction</h4>
+				<div class="card card-body h-100  border-info" style="background-color: transparent; background-color: rgba(0,0,0,0.2)">
+					<h4><b><b>Introduction🤵</b></b></h4>
 					<hr>
-					<p>I am a software engineer interested in developing web and mobile applications using
-                        various technologies and frameworks. I enjoy working in agile teams and creating high
-                        quality products using my problem- solving skills. I am always eager to learn new skills and
-                        tools to improve my performance, hence seeking a fulfilling position in the industry to
-                        utilize my skills and expand my knowledge base.</p>
+					<p style="font-family: monospace">Greetings! I'm Chaitanya Dua, a B.Tech student merging a passion for coding with a commitment to excellence. My portfolio reflects proficiency in various programming languages, showcasing projects that highlight my problem-solving skills and creativity. As I navigate my academic journey, I actively contribute to the dynamic field of software engineering. Join me in exploring the endless possibilities that code offers, where precision meets passion, and innovation fuels every line of code. Welcome to my digital space!</p>
                     
-                    <p>
-                        Contat details:- 
+                    {% comment %} <p>
+                        <b>Contact details:- </b>
                         <br><b>E-Mail</b>: chaitanyadua2014@gmail.com
                         <br><b>Phone</b>: +91 8126962776</p>
                         <p>To connect with me on Whatsapp, scan my code:
@@ -46,7 +73,7 @@
 						<li><a href="https://www.facebook.com/chaitanya.dua.1/"><img class="social" src="{% static 'images/facebook.png' %}"></a></li>
 						<li><a href="https://www.linkedin.com/in/chaitanya-dua-990919230/"><img class="social" src="{% static 'images/linkedin.png' %}"></a></li>
                         <li><a href="https://github.com/Chai14"><img class="social" src="{% static 'images/git.png' %}"></a></li>
-					</ul>
+					</ul> {% endcomment %}
 
 				</div>
 			</div>
@@ -54,11 +81,11 @@
 		<br>
 		<div class="row">
 			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>My Education 🏫</h5>
+				<div class="card card-body h-100"  style="background-color: transparent; background-color: rgba(0,0,0,0.2)">
+					<h5><b><b>My Education 🏫</b></b></h5>
 					<hr>
                     {% for n in resumedataed %}
-                    <p>
+                    <p  style="font-family: monospace">
                         <b>{{n.school_name}}</b>
                         {% comment %} <br>Bachelor of Technology in Computer Science {% endcomment %}
                         <br>{{n.school_duration}}
@@ -73,10 +100,10 @@
 			</div>
 
 			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>What I Know</h5>
+				<div class="card card-body h-100"  style="background-color: transparent; background-color: rgba(0,0,0,0.2)">
+					<h5><b><b>My Skills⚔️</b></b></h5>
 					<hr>
-					<p>
+					<p  style="font-family: monospace">
                         <b>Languages</b>: Python, C/C++, SQL , JavaScript, HTML/CSS
                         <br>
                         <b> Frameworks</b>: Django, Django REST Framework
@@ -92,72 +119,72 @@
 		<br>
 		<div class="row">
 			<div class="col-md-6">
-				<div class="card card-body h-100">
-                    <h5>My Latest Projects 💻</h5>
+				<div class="card card-body h-100"  style="background-color: transparent; background-color: rgba(0,0,0,0.2)">
+                    <h5><b><b>My Latest Projects 💻</b></b></h5>
 					<hr>
-					<p> <b> Cloud Kitchen Website </b> | Python, Django, Html, Css, Js 
+					<p  style="font-family: monospace"> <b> Cloud Kitchen Website </b> | Python, Django, Html, Css, Js 
                         <br></p>
-                    <p>
+                    <p  style="font-family: monospace">
                     • Developing a full-stack web application using django web framework
                     <br>
                     • Implented the frontend part using html, css and javascript
                     <br>
                     • Working towards making it interactive and usable for both, end-user and owner</p>
-                    <p><a href="https://github.com/Chai14/Dakaar-Lo">Github Link</a></p>
+                    <p><a href="https://github.com/Chai14/Dakaar-Lo"  style="font-size: 18px; color: rgb(51,51,255)"><b>Github Link</b></a></p>
                     <br>
-                    <p>
+                    <p   style="font-family: monospace">
                     <b> Music Cryptography </b> | Django, Python 
                     <br></p>
-                    <p>
+                    <p   style="font-family: monospace">
                     • Developing a way to hide textual data in musical notes such that melody of the music is maintained
                     <br>
                     • Using python libraries like mido for the same
                     <br>
                     • Using musical extensions like midi that is software readable
                     </p>
-                    <p><a href="https://github.com/Chai14/Music-Based-Cryptography">Github Link</a></p>
+                    <p><a href="https://github.com/Chai14/Music-Based-Cryptography" style="font-size: 18px; color: rgb(51,51,255)"><b>Github Link</b></a></p>
                     <br>
-                    <p> <b> Secure E-Voting Using Visual Cryptography </b> | Html, Css, Php 
+                    <p   style="font-family: monospace"> <b> Secure E-Voting Using Visual Cryptography </b> | Html, Css, Php 
                         <br></p>
-                    <p>
+                    <p   style="font-family: monospace">
                     • Developed a secure e-voting portel using basic web developing concepts
                     <br>
                     • Secured it using various encryption ways, like OTP, Captcha, and visual cryptography
                     <br>
                     • Useable for both voter and candidate
                     </p>
-                    <p><a href="https://github.com/Chai14/Online_Voting_System">Github Link</a></p>
+                    <p><a href="https://github.com/Chai14/Online_Voting_System"  style="font-size: 18px; color: rgb(51,51,255)"><b>Github Link</b></a></p>
 
 				</div>
 			</div>
 
 			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h5>My Certificates and Training 🏆</h5>
+				<div class="card card-body h-100"  style="background-color: transparent; background-color: rgba(0,0,0,0.2)">
+					<h5><b><b>My Certificates and Training 🏆</b></b></h5>
 				<hr>
-                <p> <b>Django</b>
+                <p   style="font-family: monospace"> <b>Django</b>
                 <br>July 2023
                 <br>• Certified By Cetpa Infotech Pvt Ltd
                 <br>• Learnt and implemented Django web framework
                 </p>
-                <p> <b>Python</b>
+                <p   style="font-family: monospace"> <b>Python</b>
                 <br>December 2021
                 <br>• Certified By Cetpa Infotech Pvt Ltd
                 <br>• Learnt Python language from basic to advance
                 <br>• Also practiced NumPy library.
                 </p>
-                <p> <b>Python Projects</b> 
+                <p   style="font-family: monospace"> <b>Python Projects</b> 
                 <br>May 2023
                 <br>• Certified By LinkedIn Learning
                 <br>• Learnt how to plan for a project
                 <br>• Helped built strategic thinking
                 </p>
-                <p> <b>Cyber Security Fundamentals </b>
+                <p   style="font-family: monospace"> <b>Cyber Security Fundamentals </b>
                 <br>April 2023
                 <br>• Certified By Infosys Springboard
                 <br>• Learnt basic information security techniques
                 </p>
-                <p> <b>Cyber Security Foundation</b>
+                <p   style="font-family: monospace"> <b>Cyber Security Foundation</b>
                     <br>November 2023
                     <br>• Certified By Infosys Springboard
                     <br>• Learnt basic information security techniques
@@ -166,8 +193,29 @@
 			</div>
 		</div>
 		<br>
+        {% comment %} <div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+
+				</div>
+			</div>
+		</div> {% endcomment %}
 	</div>
 
+    <footer class="footer" style="background-color: transparent">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <p  style="font-size: 20px"><b>Lets Connect:- &nbsp; &nbsp;</b></p>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3" style="font-size: 20px; font-family: sans serif">☎️<img class="social" src="{% static 'images/app.webp' %}">: &nbsp; <br> +91 8126962776</h5>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3"  style="font-size: 20px; font-family: sans serif">📬: chaitanyadua2014@gmail.com <br></h5>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    
 
 </body>
 </html>
